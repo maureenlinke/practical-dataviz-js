@@ -13,7 +13,7 @@ NICAR session on how to make some essential visualization types just usuing jQue
  * **[Chrome Browser](https://www.google.com/chrome/browser/)**
   
 * Localhost or a local webserver installed
- * **[For Mac users] (See also http://brianflove.com/2013/10/23/os-x-mavericks-and-apache/)**
+ * **[For Mac users] (http://brianflove.com/2013/10/23/os-x-mavericks-and-apache/)**
  * **[For PC users] (http://mirrors.gigenet.com/apache/httpd/binaries/win32/httpd-2.2.25-win32-x86-no_ssl.msi)**
 
  ###Mac instructions: 
