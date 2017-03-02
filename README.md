@@ -1,10 +1,8 @@
 # practical-dataviz-js
-NICAR session on how to make some essential visualization types, while going over best practices.
+NICAR session on how to make some essential visualization types just usuing jQuery, while going over best practices.
 
 * Maureen Linke, Associated Press
    **[@maureenlinke](http://www.twitter.com/maureenlinke)**
-
-* **[Outline of the session and data visualization principles](https://docs.google.com/document/d/1u07tD-LH5BwVia68Ntf6UGAwkpoxvgjxTWM4_k0ksto/edit?usp=sharing)**
 
 
 ##Downloads
