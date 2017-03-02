@@ -6,8 +6,9 @@ NICAR session on how to make some essential visualization types just usuing jQue
 
 ##Resources
 
-* **[JvaScript and JQuery: Interactive Front-End Web Development] (https://www.amazon.com/gp/product/1118531647/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
-Highly recommend this book, also comes with code download examples.
+* Highly recommend this book, also comes with code download examples.
+
+* **[JavaScript and JQuery: Interactive Front-End Web Development] (https://www.amazon.com/gp/product/1118531647/ref=oh_aui_search_detailpage?ie=UTF8&psc=1)
 
 * **[Presentation ](https://drive.google.com/file/d/0BwAEH-Wzs83CdjdOenY0LVN5UU0/view?usp=sharing)**
 
