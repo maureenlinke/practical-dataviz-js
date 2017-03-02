@@ -18,6 +18,9 @@ body {
 .dataTables_length {
     display: none;
 }
+.clearfix{
+    clear: both;
+}
 
 td.highlight {
     font-weight: bold;
@@ -153,66 +156,14 @@ td.highlight {
   float: right;
 }
 #clustered-bars .chart-subhead{
-  display: inline-block;
+display: inline-table;
+width: 48%;
+margin: 10px 0;
+text-align: center;
+font-weight: 400;
 }
 
-/*#clustered-bars .bar-section .bar {
+#clustered-bars .bar-section .bar {
     width: 35px;
     background-color: #707070;
 }
-*/
-#clustered-bars .bar-section .bar {
-  display: inline-block;
-  vertical-align: bottom;
-  width: 25px;
-  height: 150px;
-  background-color: #186357;
-  margin: 0 12px;
-  position: relative;
-  cursor: pointer;
-  -webkit-transition: background-color 0.5s;
-  -moz-transition: background-color 0.5s;
-  transition: background-color 0.5s;
-  color: #fff; }
-  .bar.answer-1 {
-    margin-right: -15px;
-    background-color: #186357;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    transition: height 0.5s; }
-  .bar.answer-2 {
-    margin: 0 12px 0;
-    background-color: #71c2b1;
-    -webkit-transition: background-color 0.5s;
-    -moz-transition: background-color 0.5s;
-    transition: background-color 0.5s;
-    -webkit-transition: height 0.5s;
-    -moz-transition: height 0.5s;
-    transition: height 0.5s; }
-  #clustered-bars .bar-section .bar:before {
-    content: attr(data-num);
-    position: absolute;
-    bottom: 9px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    -webkit-transition: bottom 0.5s;
-    -moz-transition: bottom 0.5s;
-    transition: bottom 0.5s; }
-  #clustered-bars .bar-section .bar:after {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: #fff;
-    -webkit-transition: bottom 0.5s;
-    -moz-transition: bottom 0.5s;
-    transition: bottom 0.5s; }
-  #clustered-bars .bar-section .bar.selected {
-    background-color: #186357; }
-    #clustered-bars .bar-section .bar.selected:after {
-      bottom: 5px; }
