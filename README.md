@@ -4,12 +4,12 @@ NICAR session on how to make some essential visualization types just using jQuer
 * Maureen Linke, Associated Press
    **[@maureenlinke](http://www.twitter.com/maureenlinke)**
 
-*jQuery is a simpler, more complex ways to select elements on the page:
+jQuery is a simpler, more complex ways to select elements on the page:
 
-* **Selecting with jQuery
+**Selecting with jQuery**
 $(".bar.horizontal")
 
-* **Selecting with Javascript
+**Selecting with Javascript**
 document.getElementsByClassName('bar.horizontal)
 
 
