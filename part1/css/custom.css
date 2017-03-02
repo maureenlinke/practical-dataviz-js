@@ -27,7 +27,7 @@ td.highlight {
     color:  #c66402;
 }
 .bar {
-  display: inline-block;
+  display: inline-block
   vertical-align: bottom;
   width: 35px;
    height: 13px;
@@ -68,7 +68,7 @@ td.highlight {
     text-align: right;
 }
  #table-wrap table td.data {
-    width: 35%;
+    width: 38%;
     color: #333;
     padding: 5px 0;
 }
