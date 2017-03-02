@@ -43,4 +43,4 @@ Highly recommend this book. Download the code for examples in the book to follow
 3. Radio button should be selected "for All Users, on Port 800", and "Typical" install type.
 4. Next, save the Apache Files in your C:/Program files directory.
 5.   Complete the installation process and donwload the GitHub repository, unzip and drop the files into the htcdocs folder of your C:/program files/apache
-6.   Open your web browser and type in localhost/debugging-new-coders/start/. 
+6.   Open your web browser and type in localhost/practical-dataviz-js/start/. 
