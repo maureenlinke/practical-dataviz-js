@@ -4,6 +4,12 @@ NICAR session on how to make some essential visualization types just usuing jQue
 * Maureen Linke, Associated Press
    **[@maureenlinke](http://www.twitter.com/maureenlinke)**
 
+##Resources
+
+* **[Chrome Browser] (vaScript and JQuery: Interactive Front-End Web Development)
+Highly recommend this book, also comes with code download examples.
+
+ * **[Presentation](https://drive.google.com/file/d/0BwAEH-Wzs83CdjdOenY0LVN5UU0/view?usp=sharing
 
 ##Downloads
 * A text editor. I recommend:
