@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 function scrolltoPage() {
 
-        var topNavY = $('.nav').height()+50;
+        var topNavY = $('.nav').height()-20;
 
         $('.nav a')
             .on('click', function() {
