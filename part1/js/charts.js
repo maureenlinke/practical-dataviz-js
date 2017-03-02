@@ -9,7 +9,7 @@ function verticalBar() {
 
     $(".bar").each(function(){
       
-      height = Number($(this).attr("data-num"));
+      height = Number($(this).attr("data-num"))*5;
 
       $(this).css("height",height+"px")
       $(".bar:after").css("left",height+"px")

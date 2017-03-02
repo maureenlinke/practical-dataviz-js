@@ -167,3 +167,79 @@ font-weight: 400;
     width: 35px;
     background-color: #707070;
 }
+#clustered-vertical {
+        position: relative;
+        margin:35px 0;
+}
+
+#clustered-vertical #bars {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+#clustered-vertical .bar {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 25px;
+  height: 150px;
+  background-color: #186357;
+  margin: 0 12px;
+  float:none;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  color: #fff; }
+#clustered-vertical .bar.answer-1 {
+    margin-right: -15px;
+    background-color: #707070;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s; }
+#clustered-vertical .bar.answer-2 {
+    margin: 0 30px 0 12px;
+    background-color: rgb(229, 158, 0);
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s; }
+#clustered-vertical .bar:before {
+    content: attr(data-num%);
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+    transition: bottom 0.5s; }
+#clustered-vertical .bar:after {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+    transition: bottom 0.5s; }
+#clustered-vertical .bar.selected {
+    background-color: #186357; }
+#clustered-vertical .bar.selected:after {
+      bottom: 5px; }
+
+.group-name {
+  color: #727272;
+  width: 56px;
+  border-right: 2px solid #fff;
+  text-align: center;
+  display: inline;
+  font-size: 12px;
+}
