@@ -11,19 +11,7 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-#map {
-    border-top: 1px solid #a2a5a1;
-    border-bottom: 1px solid #a2a5a1;
-    width: 100%;
-    height: 450px;
-    position: relative;
-}
-#map-overlay {
-    position: absolute;
-    top: 35%;
-    right: 4%;
-    z-index: 100;
-}
+
 .nav {
     margin-top: 10px;
 }
@@ -35,58 +23,135 @@ td.highlight {
     font-weight: bold;
     color:  #c66402;
 }
-/*  LEGEND  */
-
-#map-legend {
-    z-index: 102;
-    width: 145px;
-    padding: 10px;
-    margin: 0 0 20px 0;
-    font-size: 13px;
-    background: #FFF;
-    color: #3C4E5A;
-    border: 1px solid #BBB;
-    -webkit-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-    box-shadow: 1px 1px 10px #666;
-    -webkit-box-shadow: 1px 1px 10px #666;
-    -moz-box-shadow: 1px 1px 10px #666;
-}
-#map-legend h5 {
-    font: #333'"Georgia", "Times New Roman", serif';
-    margin: 1% 0 3%;
-    font-size: 1em;
-    font-weight: bold;
-}
-.legend ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.legend ul li {
-    text-align: left;
-    font-size: 13px;
-    line-height: 24px;
-    list-style: none;
-    color: #666;
-    margin: 0;
-    padding: 0;
-}
-.legend ul li span {
-    display: block;
+.bar {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 35px;
+   height: 13px;
     float: left;
-    margin: 4px 4px 0 0;
-    padding: 0;
+    margin: 0 4px 0 0;
+    background: rgb(116, 43, 49);
+  background-color: #186357;
+  margin: 0 12px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  color: #fff; 
 }
-.circle6, .circle5, .circle4, .circle3, .circle2, .circle1, .circle0, .dots {
-    border-radius: 50%;
+
+.bar::before {
+    content: attr(data-num);
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: bottom 0.5s;
+    -moz-transition: bottom 0.5s;
+    transition: bottom 0.5s;
+    color: #fff;
+}
+ #table-wrap {
+    margin-top: 15px;
+    min-width: 700px;
+    width: 100%
+}
+ #table-wrap table td.region {
+    color: #333;
+    width: 30%;
+    padding-right: 1%;
+    text-align: right;
+}
+ #table-wrap table td.data {
+    width: 35%;
+    color: #333;
+    padding: 5px 0;
+}
+ #table-wrap table td.data .population-bar {
+    height: 28px;
+    margin-right: 10px;
+    line-height: 1.5em;
+    background: #d2d2d2;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .85;
+    -moz-animation: jquery 2s ease-out;
+    -webkit-animation: jquery 2s ease-out;
+}
+#table-source {
+    font-size: .7em;
+    color: #999;
+    margin-top: 6px;
+}
+#table-subhead {
+    font-size: .9em;
+    text-transform: uppercase;
+    color: #333;
+    margin-bottom: 20px;
+}
+#chart-source {
+    font-size: .7em;
+    color: #999;
+    margin-top: 20px;
+}
+ #table-wrap table tr {
+    /*border-bottom:1px solid #f0f0f0;*/
+    cursor: default;
+}
+ #table-wrap table tr:last-of-type {
+    border-bottom: none;
+}
+
+/*Clustered bars*/
+
+#clustered-bars .bar {
+    height: 20px;
+    background: none;
+    width: 85%;
+    float: left;
+    margin: 0 10px;
+}
+#clustered-bars .row {
+    width: 100%;
+    margin-right: 4%;
+    display: inline-block;
+    letter-spacing: 0.02em;
+}
+
+#clustered-bars .bottom-bar {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #ccc;
+}
+
+#clustered-bars .top-bar {
+    position: absolute;
+    left: 0;
+    height: 100%;
     opacity: 1;
+    background-color: #707070;
 }
-.dots {
-    border: 1px solid #ccc;
-    width: 14px;
-    height: 14px;
+#clustered-bars .row-label {
+    float: left;
+    width: 15%;
 }
-.remove-bottom {
-    margin-bottom: 10px;
+#clustered-bars .bar-holder {
+    display: inline-block;
+    width: 42%;
+}
+#clustered-bars h3 {
+  margin-bottom: 40px;
+}
+#clustered-bars span.label {
+  z-index: 90;
+  position: relative;
+  float: right;
+}
+#clustered-bars .chart-subhead{
+  display: inline-block;
 }

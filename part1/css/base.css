@@ -31,6 +31,7 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline; }
+	section { margin: 10px 0; padding: 10px; border-bottom: 1px solid #ccc; min-height: 250px; }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -103,8 +104,8 @@ border-bottom: 1px solid #c66402;
 }
 /* #Links
 ================================================== */
-	a, a:visited { color: #333; text-decoration: #444;none; outline: 0; letter-spacing: 1px;
-text-transform: uppercase; }
+	a, a:visited { color: #333; text-decoration: #444;none; outline: 0; letter-spacing: 1px; text-decoration: none;
+text-transform: none; cursor: pointer; }
 	a:hover, a:focus { color: #000; }
 	p a, p a:visited { line-height: inherit; }
 
@@ -510,6 +511,7 @@ text-transform: uppercase; }
     .clearfix {
       zoom: 1; }
 
+      .clerfix {clear:both;}
     /* You can also use a <br class="clear" /> to clear columns */
     .clear {
       clear: both;
@@ -525,7 +527,8 @@ text-transform: uppercase; }
     width: 48%;
 }
 .container .column, .container .columns {
-    float: left;
+    float: none;
+    width: 100%;
     display: inline;
     margin-left: 10px;
     margin-right: 10px;

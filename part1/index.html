@@ -15,6 +15,7 @@
     <!-- CSS-->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/pie-chart.css">
 </head>
 
 <body>
@@ -24,12 +25,12 @@
         <div class="sixteen columns">
             <h1 class="remove-bottom" style="margin-top: 40px" href="index.html">Practical data viz in Javascript</h1>
 
-            <!--             Navigation-->
+    <!--             Navigation-->
          <div class="nav">
-            <a href="index.html">Intro | </a>
-            <a href="part1.html">Part 1 | </a>
-            <a href="part2.html">Part 2 | </a>
-            <a href="part3.html">Part 3 | </a>
+            <a id="single-bar">Single vertical bar | </a>
+            <a id="multiple-bar">Multiple horizontal bars | </a>
+            <a id="doughnut">Pie/doughnut | </a>
+            <a id="doughnut">Datatables | </a>
             <hr />
         </div>
            <div class="two-column">
@@ -53,15 +54,146 @@
             <p>Visualization types include:</p>
             <ul class="square">
                 <li>
-                    <a href="part1.html"><strong>Highcharts chart</strong>:</a> top ten elementary schools with highest percentages of overweight and obese children.</li>
+                    <a id="part1.html"><strong>Highcharts chart</strong></li>
+
+                    <li><a id="part3.html"> <strong>d3</strong></li>
           
-                   <li><a href="part3.html"> <strong>Datatables</strong>:</a> Table of all schools in Erie County, New York.</li>
+                   <li><a id="part3.html"> <strong>Datatables</strong></li>
             </ul>
         </div>
 
     </div>
-    <!-- container -->
 
+    <h3>Examples</h3>
+    <section id='single-bar'>
+    <h4>Single vertical bar: </h4>
+    <div class="two column">
+            <div class="bar vertical" data-num='250'></div>
+        <!--     <div class="bar vertical" data-num='400'></div> -->
+
+    </div>
+    </section>
+    <section id='multiple-bar'>
+    <h4>Multiple horizontal bars: </h4>
+     <div class="two column">
+            <div class="bars multiple"></div>
+            <div id='table-subhead'>Top ten schools or districts with highest percentage of obese, overweight children</div>
+
+            <div id='table-wrap'>
+                <table></table>
+            </div>
+    </div>
+    </section>
+    <section id='doughnut'>
+    <h4>jQuery doughnut: </h4>
+    <div class="two column">
+    
+    <p>Easy pie chart is a jQuery plugin that uses the canvas element to render simple pie charts for single values.</p>
+    <div class='pie-charts'>
+
+        <div class='chart-wrap'>
+            <div class="chart" data-percent="73" data-scale-color="#c66402">73%</div>
+            <div class="label">Bounce rate</div>
+        </div>
+
+        <div class='chart-wrap'>
+            <div class="chart" data-percent="65" data-scale-color="#c66402">65%</div>
+            <div class="label">Bounce rate</div>
+        </div>
+
+
+    </div>
+
+ 
+
+    </div>
+    </section>
+    <section id='datatables'>
+     <h4>Datatables: </h4>
+    <div class="two column">
+             <table id="schools-table" class="display" width="100%"></table>
+    </div>
+    </section>
+    <section id='clustered-bars'>
+    <h3>Clustered bar examples</h3>
+
+    <div class="row">
+     <div class='row-label'>Lifetime union</div>
+                <div class="bar-holder">
+                    <div class="bar lifetime pre">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+                <div class="bar-holder">
+                    <div class="bar lifetime post">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+    </div>
+
+    <div class="row">
+    <div class='row-label'>Value marriage</div>
+                <div class="bar-holder">
+                    <div class="bar value pre">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+                <div class="bar-holder">
+                    <div class="bar value post">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+    </div>
+
+    <div class="row">
+     <div class='row-label'>Seen child in 30 days</div>
+                <div class="bar-holder">
+                    <div class="bar child pre">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+                <div class="bar-holder">
+                    <div class="bar child post">
+                        <div class="bottom-bar"></div>
+                        <div class="top-bar"></div>
+                        <span class='label'></span>
+                    </div>
+                </div>
+    </div>
+    </section>
+    <!-- container -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/lib/underscore.min.js"></script>
+
+    <!-- pie -->
+    <script type="text/javascript" src="js/lib/easypiechart.js"></script>
+
+
+
+    <script type="text/javascript" src="js/app.js"></script>
+  
+
+
+<!-- table -->
+
+    <script type="text/javascript" src="//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="data/table-data.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+
+    <script type="text/javascript" src="js/charts.js"></script>
+
+<!-- End Document
+================================================== -->
 
     <!-- End Document
 ================================================== -->
