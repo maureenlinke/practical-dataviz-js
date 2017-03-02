@@ -7,10 +7,10 @@ NICAR session on how to make some essential visualization types just using jQuer
 jQuery is a simpler, more complex ways to select elements on the page:
 
 **Selecting with jQuery**
-$(".bar.horizontal")
+* **$(".bar.horizontal")**
 
 **Selecting with Javascript**
-document.getElementsByClassName('bar.horizontal)
+* **document.getElementsByClassName('bar.horizontal)**
 
 
 ##Resources
@@ -42,5 +42,5 @@ Highly recommend this book. Download the code for examples in the book to follow
 2. Follow the prompts to the server information screen. For each of the 2 fields enter 'localhost' and for the email add yourname@email.com. These fields do not matter, but must be filled out completely.
 3. Radio button should be selected "for All Users, on Port 800", and "Typical" install type.
 4. Next, save the Apache Files in your C:/Program files directory.
-5.   Complete the installation process and dowload the GitHub repository, unzip and drop the files into the htcdocs folder of your C:/program files/apache
+5.   Complete the installation process and donwload the GitHub repository, unzip and drop the files into the htcdocs folder of your C:/program files/apache
 6.   Open your web browser and type in localhost/debugging-new-coders/start/. 
